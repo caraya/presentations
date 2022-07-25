@@ -1,0 +1,31 @@
+{
+  "name": "inspire.js",
+  "version": "1.0.0",
+  "description": "Lean, hackable, extensible slide deck framework",
+  "main": "inspire.js",
+  "scripts": {
+    "build:css": "npx postcss **/*.postcss ./*.postcss --base . --dir . --ext .css",
+    "build": "npm run build:css",
+    "watch:css": "npx postcss **/*.postcss ./*.postcss --base . --dir . --ext .css --watch",
+    "watch": "npm run watch:css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeaVerou/inspire.js.git"
+  },
+  "keywords": [
+    "slides"
+  ],
+  "author": "Lea Verou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LeaVerou/inspire.js/issues"
+  },
+  "homepage": "https://inspirejs.org",
+  "devDependencies": {
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
+    "postcss-nesting": "^10.1.0"
+  }
+}
