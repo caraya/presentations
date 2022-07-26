@@ -43,7 +43,7 @@
 			<li>Home to go to the first slide, End to go to the last</li>
 			<li><kbd>Ctrl</kbd><kbd>G</kbd> to jump to an arbitrary slide (by slide number or identifier)</li>
 			<li class="delayed">
-				Note that if a slide contains an <code>&lt;iframe</code>, when the content in the iframe is focused, Inspire.js shortcuts will not work.
+				Note that if a slide contains an <code>&lt;iframe&gt;</code>, when the content in the iframe is focused, Inspire.js shortcuts will not work.
 				There is no way around that, you need to click on something from the actual slide to get focus out of the iframe before you use any Inspire.js keyboard shortcuts.
 				Some plugins (e.g. live demo) add on-screen "Next" buttons for this reason.
 			</li>
@@ -52,6 +52,29 @@
 </section>
 
 <section>
+  <header class="slide">
+    <h1>Understanding JSON</h1>
+  </header>
+  <article class="slide" title="What is JSON?"> 
+    <h1>What is JSON?</h1>
+
+    <ul>
+      <li>An international standard: <a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-404/">ECMA 404: The JSON data interchange syntax</a></li>
+      <li>A way to exchange data between servers and clients</li>
+      <li>A way to configure WordPress block themes</li>
+    </ul>
+  </article>
+
+  
+
+</section>
+
+
+<section>
+  <header class="slide">
+    <h1>Introducing theme.json</h1>
+  </header>
+
 	<article class="slide" title="What is theme.json">
 		<h1>What is theme.json</h1>
 		<ul>
@@ -94,18 +117,23 @@
 
     <ul>
       <li>The <code>$schema</code> attribute tells the editor where to find the definition of the schema we'll use</li>
-    <li><strong>There are two different versions of the schema but we should always use the latest indicating <code>version</code> to be <em>2</em></strong></li>
-    <ul>
-      <li>The recommended value will change as the Gutenberg team releases new versions</li>
-    </ul>
-    <li>It also helps editors like VS Code validate your schema and point them out as you're typing.</li>
+      <ul>
+        <li>This schema document will help editors like VS Code or WebStorm highlight errors as you type.</li>
+      </ul>
+      <li><strong>There are two different versions of the schema</strong></li>
+      <ul>
+        <li>We should always use the latest indicating <code>version</code> to be <em>2</em></strong></li>
+        <li>The recommended value will change as the Gutenberg team releases new versions</li>
+      </ul>
     </ul>
 
   </article>
 
-</section>
-
 <section>
+  <header class="slide">
+    <h1>Additional resources</h1>
+  </header>
+  
   <article class="slide" title="Understanding theme.json video by Daisy Olsen, part 1">
     <iframe data-src="https://www.youtube.com/embed/cjSZOJZspe0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen;" allowfullscreen></iframe>
 
@@ -115,6 +143,7 @@
     <iframe data-src="https://www.youtube.com/embed/LxIjfkc9O0Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </article>
 </section>
+
 <footer class="slide" title="The End">
   <h1>Thank you!</h1>
   <p>If you want to learn more, you can check <a href="https://learn.wordpress.org">Learn WordPress.org</a></p>
